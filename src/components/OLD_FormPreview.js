@@ -38,6 +38,10 @@ const FormPreview = () => {
     }
   }, [values, error]);
 
+  const display = (value) => {
+    document.getElementById("verdict").innerHTML = "Input received";
+  };
+
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -47,7 +51,9 @@ const FormPreview = () => {
           type="text"
           name="firstName"
           value={values.firstName}
+          onChange="display(this)"
         />
+        <p id="verdict"></p>
 
         <button type="submit">Save</button>
       </form>

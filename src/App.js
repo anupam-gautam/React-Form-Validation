@@ -1,9 +1,12 @@
 import "./App.css";
-import FormPreview from "./components/FormPreview";
+// import { AdvancedFormDisplay } from "./components/AdvancedFormDisplay";
+import { FormDisplay } from "./components/FormDisplay";
+
 function App() {
   return (
     <div>
-      <FormPreview />
+      <FormDisplay></FormDisplay>
+      {/* <AdvancedFormDisplay></AdvancedFormDisplay> */}
     </div>
   );
 }
